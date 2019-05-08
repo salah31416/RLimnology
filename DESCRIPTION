@@ -1,0 +1,19 @@
+Package: RLimnology
+Type: Package
+Title: RLimnology
+Version: 0.0.0.900
+Date: 2019-05-08
+Author: 
+	Izi Sousa-Filho <izi31416@protonmail.com>, 
+	Lorena Pinheiro-Silva <lorena.biouni@gmail.com>, 
+	Vanessa Lopes <vglopes@gmail.com>
+Maintainer: Sousa-Filho <izidro3.1416@gmail.com>
+Description: Standardized methods for calculating common important derived 
+	physical features of lakes including water density based on 
+	temperature, thermal layers, thermocline depth, lake number, Wedderburn 
+	number, Schmidt stability and others.
+License: GPL
+Depends: R (>= 3.5)
+LazyLoad: yes
+Imports: data.table
+Packaged: 2019-05-08 17:31:21.212 UTC; izi

@@ -1,7 +1,7 @@
 %
 \name{water_density}
 \alias{water_density}
-\title{Estimate water density}
+\title{Estimate Water Density}
 \usage{
 water_density(wt, tds = 0, tss = 0, sal = 0, sg = 2.5,
   method = c("gill_m", "tilton"))

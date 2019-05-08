@@ -1,7 +1,7 @@
 %
 \name{ec2tds}
 \alias{ec2tds}
-\title{Electral conductivity (EC) to Total Dissolvid Solids (TDS)}
+\title{Electral Conductivity (EC) to Total Dissolvid Solids (TDS)}
 \usage{
 ec2tds(ec, k = 0.64)
 }

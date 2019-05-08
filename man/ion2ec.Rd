@@ -1,7 +1,7 @@
 %
 \name{ion2ec}
 \alias{ion2ec}
-\title{Estimate the Electral conductivity}
+\title{Estimate the Electral Conductivity}
 \usage{
 ion2ec(ions)
 }

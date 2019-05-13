@@ -1,5 +1,7 @@
 # RLimnology
 
+<img src="https://github.com/salah31416/RLimnology/blob/master/inst/figures/logo_rlimnology.png" title="Rlimnology"/>
+
 * [Installation](#installation)
 * [Estimate Electroconductivity to Dissolved Total Solids](#estimate-electroconductivity-to-dissolved-total-solids)
 * [Estimate Electrical Conductivity](#estimate-electrical-conductivity)

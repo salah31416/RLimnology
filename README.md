@@ -15,6 +15,7 @@ devtools::install_github("salah31416/RLimnology")
 
 # Estimate Electroconductivity to Dissolved Total Solids
 
+
 ```r
 ## estimate 10 muS/cm EC to TDS
 ec2tds(10)

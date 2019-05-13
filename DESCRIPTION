@@ -2,7 +2,7 @@ Package: RLimnology
 Type: Package
 Title: RLimnology
 Version: 0.0.0.900
-Date: 2019-05-08
+Date: 2019-05-11
 Author: 
 	Izi Sousa-Filho <izi31416@protonmail.com>, 
 	Lorena Pinheiro-Silva <lorena.biouni@gmail.com>, 
@@ -14,6 +14,7 @@ Description: Standardized methods for calculating common important derived
 	number, Schmidt stability and others.
 License: GPL
 Depends: R (>= 3.5)
-LazyLoad: yes
+LazyLoad: true
+LazyData: true
 Imports: data.table
-Packaged: 2019-05-08 17:31:21.212 UTC; izi
+Packaged: 2019-05-11 15:15:55.741 UTC; izi

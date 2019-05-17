@@ -1,6 +1,10 @@
+
+##-------------------------------------------------------------
+## 
+##-------------------------------------------------------------
 ion2ec = function(ions)
 {
-	## names of ions
+	## ions
 	ni = c("Ca", "Mg", "K", "Na", "HCO3", "Cl", "SO4", "NO3")
 	
 	## constants
@@ -16,24 +20,24 @@ ion2ec = function(ions)
 			SO4  = 1.54,
 			NO3  = 1.15)
 	
-	## verifica quais ions presentes
+	## check which ions are present
 	ip = ni[ni %in% names(ions)]
 	
-	## reordena
+	## order
 	ions = ions[ip]
 	
-	## separa as constantes
+	## separates the constants
 	k = data.frame(ki[ip])
 	
-	## aplica as constantes
+	## apply the constants
 	EC_ions = do.call(rbind, apply(ions, 1, function(x) x * k))
 	
-	## nomeia as colunas para EC(eletro condutividade)
+	## names the columns for EC (electro conductivity)
 	names(EC_ions) = paste0("EC_", names(ions))
 	
-	## EC total
+	## Total EC
 	EC_ions$EC_est = rowSums(EC_ions, na.rm = TRUE)
-	## TDS estimado
+	## Estimated TDS
 	EC_ions$TDS_est = rowSums(ions, na.rm = TRUE)
 	
 	## TDS   = A x EC :: A = TDS/EC
@@ -43,4 +47,4 @@ ion2ec = function(ions)
 	
 	return(EC_ions)
 	
-}##end function
+}#end ion2ec

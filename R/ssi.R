@@ -1,3 +1,7 @@
+
+##-------------------------------------------------------------
+## 
+##-------------------------------------------------------------
 ssi = function(dt, Az, dA, dz = .1, ...)
 {
 	.=z=wt=zg=SSI=pm=pz=NULL
@@ -25,23 +29,23 @@ ssi = function(dt, Az, dA, dz = .1, ...)
 		DD[date == grp[i], wt := approx(DT[date == grp[i],z], DT[date == grp[i],wt], unique(z))$y]
 	}#end for
 	
-	# densidade da agua
+	# water density
 	DD[, pz := water_density(wt), by = date]
 	
-	## densidade média
+	## average density
 	DD[, pm := mean(pz), by = date]
 	#DT[, pm := sum(pz * Az * h, na.rm=T)/sum(V, na.rm=T)]
 	
-	## centro de gravidade
+	## gravity center
 	DD[, zg := 1/sum(Az * pz, na.rm=T) * sum(Az*pz*z, na.rm=T), by = date]
 	
-	## gravidade
+	## gravity constant
 	g = 9.8 ## m^2/s
 	
-	## estabilidade schmidt	
+	## stability schmidt	
 	DD[, SSI := sum(g * Az/Az[1] * (pz - pm) * (z - zg)) * dz, by = date]
 
-	## renomear
+	## to rename
 	setnames(DD, "date", nm)
 	
 	## out
@@ -49,4 +53,4 @@ ssi = function(dt, Az, dA, dz = .1, ...)
 	
 	return(DD[])
 	
-}#end funtion
+}#end ssi

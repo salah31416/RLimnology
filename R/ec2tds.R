@@ -15,4 +15,4 @@ ec2tds = function(ec, k = 0.64)
 	
 	return(tds)
 	
-}##end function
+}##end ec2tds

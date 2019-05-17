@@ -34,5 +34,5 @@ rtr_mixing = function(dt, ...)
 	
 	setnames(data, c(1,2,3,4), c(nm[1], nm[2], nm[3], "density"))	
 	
-		return(data)
+	return(data)
 }#end rtr_mixing

@@ -6,9 +6,9 @@
 ec2tds(ec, k = 0.64)
 }
 \arguments{
-\item{ec}{a numeric vector of EC (microS/cm)}
+\item{ec}{A numeric vector of EC (microS/cm)}
 
-\item{k}{a TDS factor}
+\item{k}{A TDS factor}
 }
 \value{
 A numeric vector of TDS (mg/L)

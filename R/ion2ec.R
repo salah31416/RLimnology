@@ -2,8 +2,9 @@
 ##-------------------------------------------------------------
 ## 
 ##-------------------------------------------------------------
-ion2ec = function(ions)
+ion2ec = function(dta)
 {
+	ions = dta
 	## ions
 	ni = c("Ca", "Mg", "K", "Na", "HCO3", "Cl", "SO4", "NO3")
 	
@@ -22,13 +23,13 @@ ion2ec = function(ions)
 	
 	## check which ions are present
 	ip = ni[ni %in% names(ions)]
-	
+
 	## order
 	ions = ions[ip]
 	
 	## separates the constants
 	k = data.frame(ki[ip])
-	
+
 	## apply the constants
 	EC_ions = do.call(rbind, apply(ions, 1, function(x) x * k))
 	
@@ -45,6 +46,6 @@ ion2ec = function(ions)
 	## A = 0.64
 	EC_ions$Factor_TDS = EC_ions$TDS_est/EC_ions$EC_est
 	
-	return(EC_ions)
+	return(cbind(dta, EC_ions))
 	
 }#end ion2ec

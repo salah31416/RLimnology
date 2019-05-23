@@ -9,7 +9,7 @@ Author:
 	Vanessa Lopes <vglopes@gmail.com>
 Maintainer: Sousa-Filho <izi31416@protonmail.com>
 Description: Functions and methods for calculate parameters of physical 
-and chemical characteristics of water bodies. It includes water density 
+and chemical characteristics in water bodies. It includes water density 
 based on temperature, relative thermal resistance and others.
 License: GPL-2
 Depends: R (>= 3.5)

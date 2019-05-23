@@ -1,6 +1,6 @@
 # RLimnology
 
-Functions and methods for calculating physical and chemical characteristic parameters in a body of water. It includes water density based on temperature, relative thermal resistance and others.
+Functions and methods for calculate parameters of physical and chemical characteristics in water bodies. It includes water density based on temperature, relative thermal resistance and others.
 
 <img src="https://github.com/salah31416/RLimnology/blob/master/inst/figures/logo_rlimnology.png" title="Rlimnology"/>
 

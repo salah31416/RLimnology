@@ -59,7 +59,7 @@ water_density = function(wt,
 			   ##----------------------------------------------------
 			   rho = (rho_ts + rho_wt + rho_sal)
 
-		   },
+		   }, #gill
 
 		   tilton = {
 
@@ -71,7 +71,8 @@ water_density = function(wt,
 			   ## equation 4
 			   rho = (1 - A/B * C/D) * 1000
 
-		   })
+		   }# tilton
+	)#end switch
 
 	return(rho)
 

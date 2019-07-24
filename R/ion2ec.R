@@ -44,7 +44,7 @@ ion2ec = function(dta)
 	## TDS   = A x EC :: A = TDS/EC
 	## 824.9 = A x 1286.148
 	## A = 0.64
-	EC_ions$Factor_TDS = EC_ions$TDS_est/EC_ions$EC_est
+	EC_ions$Factor_TDS = EC_ions$TDS_est / EC_ions$EC_est
 	
 	return(cbind(dta, EC_ions))
 	

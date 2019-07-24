@@ -3,10 +3,10 @@
 \alias{ion2ec}
 \title{Estimate the Electral Conductivity}
 \usage{
-ion2ec(ions)
+ion2ec(dta)
 }
 \arguments{
-\item{ions}{a data.frame of ion concentration (mg/L)}
+\item{dta}{a data.frame of ion concentration (mg/L)}
 }
 \value{
 A data.frame of electrical conductivity (microS/cm), estimate TDS (TDS_est) and factor TDS

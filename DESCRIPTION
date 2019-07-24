@@ -2,18 +2,16 @@ Package: RLimnology
 Type: Package
 Title: RLimnology
 Version: 0.0.0.900
-Date: 2019-05-11
+Date: 2019-07-24
 Author: 
 	Izi Sousa-Filho <izi31416@protonmail.com>, 
 	Lorena Pinheiro-Silva <lorena.biouni@gmail.com>, 
 	Vanessa Lopes <vglopes@gmail.com>
 Maintainer: Sousa-Filho <izi31416@protonmail.com>
-Description: Functions and methods for calculate parameters of physical 
-and chemical characteristics in water bodies. It includes water density 
-based on temperature, relative thermal resistance and others.
+Description: Functions and methods for calculate parameters of physical and chemical characteristics in water bodies. It includes water density based on temperature, relative thermal resistance and others.
 License: GPL-2
 Depends: R (>= 3.5)
 LazyLoad: true
 LazyData: true
 Imports: data.table
-Packaged: 2019-05-11 15:15:55.741 UTC; izi
+Packaged: 2019-07-24 09:54:43.609 UTC; izi
